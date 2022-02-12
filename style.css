@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ img{
+    width:100%;
+     height: 333px;  
+}  
+
+.hero{
+    height:100vh;
+    width:100%;
+    background:url('images/2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* menu start */
+.menu{
+    display: flex;
+    justify-content:center;
+    height:50px;
+    align-items:center;
+    position:relative;
+}
+
+.logo{
+
+    color:#FFD211;
+     font-size:35px; 
+    letter-spacing: 1px;
+    cursor: pointer;
+    justify-content: space-between;
+     padding-top:15px;
+    /* padding-left: 8%; */
+    padding-left: 3%;
+    padding-right : 8%; 
+    
+    
+    
+}
+span{
+    color:#f9004d;
+}
+
+.menu::before{
+    content: "";
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+     height:100%;
+    width:100%; 
+    z-index:-1;
+}
+.menu ul{
+    display: flex;
+    list-style:none;
+}
+
+.menu ul li{
+	 padding:20px 0; 
+     list-style-type: none;
+     display: inline-block;
+     
+} 
+.menu ul li a{
+	text-decoration:none;
+	 color:#fff; 
+	padding:5px 20px;
+	display:block;
+	text-transform:uppercase;
+	font-weight:700;
+	transition:.5s;
+}
+.menu ul li a:hover{
+	background:#FFD211;
+	 border-radius:5px; 
+}
+
+
+.content{
+    position:absolute;
+    top:50%;
+    left:8%;
+     /* transform: translate(-50%);  */
+}
+h1{
+    color:white;
+    margin:20px 0px 20px;
+    font-size:75px;
+}
+h3{
+    color:white;
+    font-size:25px;
+    margin-bottom: 50px;
+}
+h4{
+    color:#fcfc;
+    letter-spacing:2px;
+    font-size:20px;
+}
+.name{
+    color:darkorange;
+} 
+.title{
+    color:greenyellow;
+}
+/* end */
+
+/* about */
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: black;
+}
+.about img{
+	height: auto;
+	width: 430px;
+    
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+   
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+    text-decoration: none;
+    background-image:linear-gradient(45deg,lightsalmon,tomato);
+   
+    padding:10px 30px;
+    border-radius: 30px;
+    color:white;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+button:hover{
+	background-color: transparent;
+    background-image:linear-gradient(45deg,blue, green);
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+/* portfolio */
+
+#portfolio{
+    display: flex;
+     flex-direction: column; 
+    background-color: black;
+}
+.gallery img{
+    width:32%;
+	float:left;
+	overflow:hidden;
+	margin-left:2%;
+	position: relative;
+	margin-bottom: 20px;
+}
+.gallery img:first-child,
+.gallery img:nth-child(4){
+	margin-left: 0;
+}
+.gallery img:hover {
+    background-color:green;
+     cursor: pointer; 
+     border-radius:5px; 
+}
+
+
+.service{
+	background: black;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f9004d;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: #fcfc;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	/* background-color:#f9004d; */
+	background-image:linear-gradient(45deg,#ff7675,#fdcb6e);
+	color: white;
+	text-decoration: none;
+	border: 0px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+.hire-me{
+	width: 100%;
+	height: 290px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.hire-me p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.hire-me .button-two{
+	/* background-color:#f9004d; */
+    background-image:linear-gradient(45deg,#182C61,#FC427B);
+	color: white;
+	text-decoration: none;
+	border: 0px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+/* Contact Page*/
+
+.contact-area{
+	padding:80px 0;
+	background: rgb(2, 2, 66);
+}
+
+.contact-form{
+	width:40%;
+	margin:0 auto;
+}
+.form-group{
+	margin-bottom: 15px;
+}
+.section-title h2{
+    color: rgb(82, 201, 27);
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+   
+}
+.form-group input,
+.form-group textarea{
+	width:100%;
+	padding: 5px 3px;
+	border-radius:10px;
+	border: 1px solid #84817a;
+}
+
+/* Footer Area*/
+
+.footer-area{
+	padding: 20px 0;
+	text-align:center;
+	background:#2d3436;
+}
+.footer-area p{
+	color:#ff5252;
+}
+.footer-area a{
+	color: #FFD211;
+	text-decoration:none;
+	font-weight: 700px;
+}
+
+.contact-form input[type=submit]{
+	
+    background-image:linear-gradient(45deg,#1B9CFC,#25CCF7);
+    padding:10px 30px;
+    border-radius: 15px;
+    color:white;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+
+.contact-form input[type=submit]:hover{
+	border-radius:5px;
+	cursor:pointer;
+}
+
+
+.social{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	background:  blueviolet;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
